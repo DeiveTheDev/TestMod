@@ -17,7 +17,7 @@ public class TestMod implements ModInitializer, RecipeEntrypoint, GameStartEntry
     public void onInitialize() {
 
 		TestBlocks.initBlocks();
-		//TestItems.initItems();
+		TestItems.initItems();
 
 		LOGGER.info("TestMod initialized.");
     }

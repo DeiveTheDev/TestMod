@@ -11,16 +11,15 @@ public class TestItems {
 
 	public static Item testItem;
 
-	static {
-		testItem = new ItemBuilder(MOD_ID)
-			.build(new Item("item.testitem", MOD_ID + ":item/test_item", nextID()));
-	}
-
 	public static void initItems() {
 
 		//Like block building but shorter
 
+		/*
+		testItem = new ItemBuilder(MOD_ID)
+			.build(new Item("item.testitem", MOD_ID + ":item/test_item", nextID()));
 
+		 */
 
 		LOGGER.info("Items initialized.");
 	}
