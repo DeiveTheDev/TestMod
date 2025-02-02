@@ -1,0 +1,4 @@
+tile.testmod.block.testblock.name = Test Block
+tile.testmod.block.testblock.desc = A block just for tests.
+item.testmod.item.testitem.name = Test Item
+item.testmod.item.testitem.desc = Test Item Description

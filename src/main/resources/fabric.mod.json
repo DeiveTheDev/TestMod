@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "testmod",
   "version": "${version}",
 
-  "name": "Example Mod",
+  "name": "Test Mod",
   "description": "This mod aims to help new BTA modders.",
   "authors": [
-    "Turnip Labs"
+    "Deive The Dev"
   ],
   "contact": {
     "homepage": "",
@@ -18,21 +18,27 @@
 
   "environment": "*",
   "entrypoints": {
-    "main": [
-			"turniplabs.examplemod.ExampleMod"
-    ],
+		"main": [
+			"deivethedev.testmod.TestMod"
+		],
 		"beforeGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"deivethedev.testmod.TestMod"
 		],
 		"afterGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"deivethedev.testmod.TestMod"
 		],
 		"recipesReady": [
-			"turniplabs.examplemod.ExampleMod"
+			"deivethedev.testmod.TestMod"
+		],
+		"initModels": [
+			"deivethedev.testmod.TestModels"
+		],
+		"onInitialize": [
+			"deivethedev.testmod.TestMod"
 		]
 	},
   "mixins": [
-      "examplemod.mixins.json"
+      "testmod.mixins.json"
   ],
 
   "depends": {
