@@ -20,7 +20,8 @@ public class TestMod implements ModInitializer, RecipeEntrypoint, GameStartEntry
     public void onInitialize() {
 
 		//To create items and block you need to initialize then before creating their models.
-		TestBlocks.initBlocks();
+		//First let's learn how to make a block
+		TestBlocks.initBlocks(); // Ctrl + Left-Click in TestBlocks
 		TestItems.initItems();
 
 		LOGGER.info("TestMod initialized.");

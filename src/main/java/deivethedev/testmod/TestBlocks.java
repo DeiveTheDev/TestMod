@@ -11,6 +11,12 @@ import static deivethedev.testmod.TestMod.LOGGER; // same
 
 public class TestBlocks {
 
+	// START HERE
+	// For each block you will need a texture, a name, and an id.
+	// the id cound be setted mannulay, but if in the future you need to change them, you would need to do this manually as well
+	// so we need make it automaticaly
+	// go to TestConfig class, change the values and go back here
+
 	// Importing the starting id that we set in TestConfig
 	private static int startingID = TestConfig.CFG.getInt("IDs.startingBlockID");
 	private static int nextID() {return startingID++;} // just a little function to increase the id every new item
