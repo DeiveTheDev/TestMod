@@ -20,7 +20,7 @@ public class TestItems {
 
 		// Like block building but shorter, please check TestBlocks before this
 
-		// Creating a simple item:
+		// Creating a simple item (no durability and nothing else, just an image and name):
 		banana = new ItemBuilder(MOD_ID)
 			.build(new Item("item.banana", MOD_ID + ":item/banana", nextID()));
 

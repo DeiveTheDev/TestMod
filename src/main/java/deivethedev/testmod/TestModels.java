@@ -36,18 +36,21 @@ public class TestModels implements ModelEntrypoint {
 	@Override
 	public void initBlockModels(BlockModelDispatcher dispatcher) {
 
-		//The block variable is being imported from TestBlocks, look in the top of the script
+		// The block variable is being imported from TestBlocks, look in the top of the script
 
+		// The ModelHelper is just an easier way to create models provided by HalpLibe
+
+		// Creating a standard block model (full block) an "applying" to the block data.
 		ModelHelper.setBlockModel(testBlock, () -> new BlockModelStandard<>(testBlock)
-			.setTex(0,"testmod:block/test_block", Side.sides)
+			.setTex(0, MOD_ID + ":block/test_block", Side.sides) // setting the texture (don't forget the ':'). 'sides' can be: TOP, BOTTOM, NORTH, SOUTH, EAST, WEST
+			// In resources create a folder 'assets', inside it another folder 'yourmodname', inside it 'textures', inside it 'block'. Inside it put the textures of your blocks with names in snake_case
 		);
 	}
 
 	@Override
 	public void initItemModels(ItemModelDispatcher dispatcher) {
 
-		//The item variable is being imported from TestItems, look in the top of the script
-
+		// ALMOST the same as creating a standard block model (look up)
 		ModelHelper.setItemModel(banana, () -> {
 			ItemModelStandard model = new ItemModelStandard(banana, MOD_ID);
 			model.icon = TextureRegistry.getTexture(new NamespaceID(MOD_ID, "item/banana"));

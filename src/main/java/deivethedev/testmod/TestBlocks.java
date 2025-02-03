@@ -23,8 +23,8 @@ public class TestBlocks {
 
 		// Creating a simple block with no functionality:
 
-		// Creating a block builder
-		// The block builder is just an easier way to create blocks provided by HalpLibe
+		// Creating a BlockBuilder
+		// The BlockBuilder is just an easier way to create blocks provided by HalpLibe
 
 		BlockBuilder test_builder = new BlockBuilder(MOD_ID) // MOD_ID is being imported from TestMod, look in the top of the script.
 
