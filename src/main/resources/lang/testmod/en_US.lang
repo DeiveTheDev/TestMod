@@ -1,4 +1,4 @@
 tile.testmod.block.testblock.name = Test Block
-tile.testmod.block.testblock.desc = A block just for tests.
-item.testmod.item.testitem.name = Test Item
-item.testmod.item.testitem.desc = Test Item Description
+tile.testmod.block.testblock.desc = A block just for tests
+item.testmod.item.banana.name = Banana
+item.testmod.item.banana.desc = it's a Banana

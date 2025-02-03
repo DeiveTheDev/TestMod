@@ -10,12 +10,16 @@ public class TestMod implements ModInitializer, RecipeEntrypoint, GameStartEntry
     public static final String MOD_ID = "testmod";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-	private static int startingID = 2000;
-	public static int nextID() {return startingID++;}
+	// Just a quick explanation
+	// This is your Main script, current it is handling almost all entrypoints defined in fabric.mod.json but you can separate then later if you want
+	// The ModelEntrypoint is being handled in TestModels just to be more organized.
+
+	// Don't forget that with Ctrl + Left-Click on a field or method you can quickly get information on when and where that field or method is assign or used.
 
     @Override
     public void onInitialize() {
 
+		//To create items and block you need to initialize then before creating their models.
 		TestBlocks.initBlocks();
 		TestItems.initItems();
 
@@ -34,7 +38,7 @@ public class TestMod implements ModInitializer, RecipeEntrypoint, GameStartEntry
 
 	@Override
 	public void beforeGameStart() {
-		new TestItems();
+
 	}
 
 	@Override

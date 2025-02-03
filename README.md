@@ -1,37 +1,49 @@
-# Example Mod
+# Test Mod
 
-Template for making Babric mods for BTA!
+A tutorial mod for making Babric mods for BTA!
 
-**Note: *DO NOT fork this repository unless you want to contribute!***
+Credits:
+DeiveTheDev (the creator)
+CalamityCage (for the mod I used to learn)
+Turniplabs (for the base mod)
+---
 
-## Prerequisites
-- JDK for Java 17 ([Eclipse Temurin](https://adoptium.net/temurin/releases/) recommended)
-- [Intellij IDEA](https://www.jetbrains.com/idea/download/) (Scroll down for the free community edition, if using linux **DO NOT** use the flatpak distribution)
-- Minecraft Development plugin (Optional, but highly recommended)
+## Instructions
 
-## Setup instructions
-   
+First, download the Example Mod by TurnipLab and follow their README. After that you come back here.
 
-1. Click the `Use this template` button on this repo's page above (Will only appear if logged in). Choose `Create a new repository`, you will be redirected to a new page. Enter your repo's name and description, and hit `Create repository`.  
-   To get your project, open IntelliJ IDEA and click `Get from VCS`. Select `Repository URL` and enter your repo's url
+You can change this mod if you want, but I recommend you use this just like a book to learn and copying the instructions in your mod.
+If you copy something by `Ctrl + C` and paste in you project, make sure to update the imports too. It will appear in red if it is missing.  
+If you just rewrite what is in red (if it is a Class) an option will show, just press `Tab` and automatically will write the import on top of your code.
 
-2. After the project has finished importing, close it and open it again.  
-   If that does not work, open the right sidebar with `Gradle` on it, open `Tasks` > `fabric` and run `ideaSyncTask`.
+### A little Tip
 
-3. Create a new run configuration by going in `Run > Edit Configurations`.  
-   Then click on the plus icon and select Gradle. In the `Tasks and Arguments` field enter `build`.  
-   Running it will build your finished jar files and put them in `build/libs/`.
+If you are in doubt where to change the texts `examplemod` and `turniplabs` with your mod id and mod group, here is where you need to change them.  
+Change all the `yourmodname` and `yourgroupname` in files names/variables below. Everytime you change a file name, refactor the code.  
+I recommend set your mod id and name as the same, change then in:
 
-4. Lastly, open `File` > `Settings` and head to `Build, Execution, Development` > `Build Tools` > `Gradle`.  
-   Make sure `Build and run using` and `Run tests using` is set to `Gradle`.
+`gradle.properties > mod_name = yourmodname (lowercase)`
 
-5. Done! Now, all that's left is to change every mention of `examplemod` and `turniplabs` to your own mod id and mod group, respectively. Happy modding!
+`gradle.properties > mod_group = yourgroupname (lowercase)`
+
+`src > main > java > yourgroupname > yourmodname > YourModName(PascalCase) > MOD_ID = yourmodname (lowercase)`
+
+Now what you need to change in your files:
+
+`src > main > resources > lang > yourmodname`
+
+`src > main > resources > fabric.mod.json > "id": "yourmodname" (You can already change name, description and authors too)`
+
+`src > main > resources > fabric.mod.json > mixins ["yourmodname.mixins.json"]   (Create the 'mixins' folder in the same folder as your main script)`
+
+`src > main > resources > yourmodname.mixins.json`
+
+You don't need to change the `import turniplabs.halplibe`, just the change the packages if you haven't already refactored.
+
+Lastly, almost every mod will use `YourModNameScriptName` in the main scripts, use this also to make it easier for other developers to read your code.
 
 ## Tips
 
-1. If you haven't already you should join the BTA modding discord! https://discord.gg/FTUNJhswBT
-2. You can set your username when launching the client run configuration by setting `--username <username>` in your program arguments.
-3. When launching the server run configuration you may want to remove the `nogui` program argument in order to see the regular server GUI.
-4. In Intellij you can double press shift or press ctrl+N to search class files, change the search from the default `Project Files` to `All Places` you can easily explore the classes for you dependencies and even BTA itself.
-5. In Intellij if ctrl+left click on a field or method you can quickly get information on when and where that field or method is assign or used.
-
+1. If you haven't already you should join the BTA modding discord! https://discord.gg/FTUNJhswBT5. 
+2. In Intellij if `Ctrl + Left-Click` on a field or method you can quickly get information on when and where that field or method is assign or used.
+5. In Intellij you can double press shift or press ctrl+N to search class files, change the search from the default `Project Files` to `All Places` you can easily explore the classes for you dependencies and even BTA itself.
