@@ -8,6 +8,10 @@ CalamityCage (for the mod I used to learn)
 TurnipLabs (for the base mod)
 ---
 
+## Prerequisites
+
+Know how to program in Java: https://www.codecademy.com/learn/learn-java
+
 ## Instructions
 
 First, download the Example Mod by TurnipLabs and follow their README. After that you come back here.
@@ -15,6 +19,12 @@ First, download the Example Mod by TurnipLabs and follow their README. After tha
 You can change this mod if you want, but I recommend you use this just like a book to learn and copying the instructions in your mod.
 If you copy something by `Ctrl + C` and paste in you project, make sure to update the imports too. It will appear in red if it is missing.  
 If you just rewrite what is in red (if it is a Class) an option will show, just press `Tab` and automatically will write the import on top of your code.
+
+## Step One
+
+After reading all the tips, go to:
+
+src > main > java > deivethedev > testmod > TestMod(it is the main script).
 
 ### A little Tip
 
