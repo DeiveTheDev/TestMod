@@ -2,15 +2,15 @@
 
 A tutorial mod for making Babric mods for BTA!
 
-Credits:
-DeiveTheDev (the creator)
-CalamityCage (for the mod I used to learn)
-Turniplabs (for the base mod)
+Credits:  
+DeiveTheDev (the creator) I <-☝️🤓  
+CalamityCage (for the mod I used to learn)  
+TurnipLabs (for the base mod)
 ---
 
 ## Instructions
 
-First, download the Example Mod by TurnipLab and follow their README. After that you come back here.
+First, download the Example Mod by TurnipLabs and follow their README. After that you come back here.
 
 You can change this mod if you want, but I recommend you use this just like a book to learn and copying the instructions in your mod.
 If you copy something by `Ctrl + C` and paste in you project, make sure to update the imports too. It will appear in red if it is missing.  
