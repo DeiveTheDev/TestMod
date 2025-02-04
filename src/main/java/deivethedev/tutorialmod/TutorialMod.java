@@ -1,13 +1,12 @@
-package deivethedev.testmod;
+package deivethedev.tutorialmod;
 
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import turniplabs.halplibe.util.GameStartEntrypoint;
-import turniplabs.halplibe.util.RecipeEntrypoint;
 
-public class TestMod implements ModInitializer, RecipeEntrypoint, GameStartEntrypoint {
-    public static final String MOD_ID = "testmod";
+public class TutorialMod implements ModInitializer, GameStartEntrypoint {
+    public static final String MOD_ID = "tutorialmod";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	// Just a quick explanation
@@ -21,21 +20,11 @@ public class TestMod implements ModInitializer, RecipeEntrypoint, GameStartEntry
 
 		//To create items and block you need to initialize then before creating their models.
 		//First let's learn how to make a block
-		TestBlocks.initBlocks(); // Ctrl + Left-Click in TestBlocks
-		TestItems.initItems();
+		TutorialBlocks.initBlocks(); // Ctrl + Left-Click in TestBlocks
+		TutorialItems.initItems();
 
-		LOGGER.info("TestMod initialized.");
+		LOGGER.info("Tutorial Mod initialized.");
     }
-
-	@Override
-	public void onRecipesReady() {
-
-	}
-
-	@Override
-	public void initNamespaces() {
-
-	}
 
 	@Override
 	public void beforeGameStart() {

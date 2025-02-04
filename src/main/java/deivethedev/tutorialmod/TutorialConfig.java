@@ -1,9 +1,9 @@
-package deivethedev.testmod;
+package deivethedev.tutorialmod;
 
 import turniplabs.halplibe.util.TomlConfigHandler;
 import turniplabs.halplibe.util.toml.Toml;
 
-public class TestConfig {
+public class TutorialConfig {
 	private static final Toml TOML = new Toml("TestMod's TOML Config");
 	public static final TomlConfigHandler CFG;
 
@@ -21,6 +21,6 @@ public class TestConfig {
 			.addEntry("startingItemID", "Default: 22000", 22000) // id that your items id start with (please change id to something else)
 			.addEntry("startingBlockID", "Default: 7000", 7000); // id that your blocks id start with (please change id to something else)
 
-		CFG = new TomlConfigHandler(TestMod.MOD_ID, TOML);
+		CFG = new TomlConfigHandler(TutorialMod.MOD_ID, TOML);
 	}
 }

@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "id": "testmod",
+  "id": "tutorialmod",
   "version": "${version}",
 
-  "name": "Test Mod",
-  "description": "Test Mod.",
+  "name": "Tutorial Mod",
+  "description": "A Tutorial Mod",
   "authors": [
     "Deive The Dev"
   ],
@@ -19,26 +19,26 @@
   "environment": "*",
   "entrypoints": {
 		"main": [
-			"deivethedev.testmod.TestMod"
+			"deivethedev.tutorialmod.TutorialMod"
 		],
 		"beforeGameStart": [
-			"deivethedev.testmod.TestMod"
+			"deivethedev.tutorialmod.TutorialMod"
 		],
 		"afterGameStart": [
-			"deivethedev.testmod.TestMod"
+			"deivethedev.tutorialmod.TutorialMod"
 		],
 		"recipesReady": [
-			"deivethedev.testmod.TestMod"
+			"deivethedev.tutorialmod.TutorialRecipes"
 		],
 		"initModels": [
-			"deivethedev.testmod.TestModels"
+			"deivethedev.tutorialmod.TutorialModels"
 		],
 		"onInitialize": [
-			"deivethedev.testmod.TestMod"
+			"deivethedev.tutorialmod.TutorialMod"
 		]
 	},
   "mixins": [
-      "testmod.mixins.json"
+      "tutorialmod.mixins.json"
   ],
 
   "depends": {

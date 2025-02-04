@@ -1,4 +1,13 @@
-tile.testmod.block.testblock.name = Test Block
-tile.testmod.block.testblock.desc = A block just for tests
-item.testmod.item.banana.name = Banana
-item.testmod.item.banana.desc = it's a Banana
+tile.tutorialmod.block.tutorialblock.name = Tutorial Block
+tile.tutorialmod.block.tutorialblock.desc = A block made just to learn
+tile.tutorialmod.block.bananablock.name = Banana Block
+tile.tutorialmod.block.bananablock.desc = A lot of BANANAS
+
+item.tutorialmod.item.tutorialitem.name = Tutorial Item
+item.tutorialmod.item.tutorialitem.desc = A little friend :)
+item.tutorialmod.item.banana.name = Banana
+item.tutorialmod.item.banana.desc = it's a Banana
+item.tutorialmod.item.cookedbanana.name = Cooked Banana
+item.tutorialmod.item.cookedbanana.desc = Delicious
+item.tutorialmod.item.woodchips.name = Wood Chips
+item.tutorialmod.item.woodchips.desc = Can be used as fuel, but you will need a lot of them

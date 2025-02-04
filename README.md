@@ -1,4 +1,4 @@
-# Test Mod
+# Tutorial Mod
 
 A tutorial mod for making Babric mods for BTA!
 
